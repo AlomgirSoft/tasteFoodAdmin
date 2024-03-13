@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/akaya_telivigala</item>
+        <item>@font/lato</item>
+        <item>@font/lato_bold</item>
+        <item>@font/lato_bold_italic</item>
+        <item>@font/yatra_one</item>
+        <item>@font/yeseva_one</item>
+        <item>@font/yusei_magic</item>
+    </array>
+</resources>

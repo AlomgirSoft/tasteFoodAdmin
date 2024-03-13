@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="green">#15BE77 </color>
+    <color name="gray">#FFFFFF</color>
+    <color name="orange">#FFC040</color>
+    <color name="orange1">#FF7A00</color>
+    <color name="red">#E85353</color>
+    <color name="dash_bord_act">#4DD1FF96</color>
+    <color name="dash_bord_act_round">#4D15BE77</color>
+
+
+</resources>

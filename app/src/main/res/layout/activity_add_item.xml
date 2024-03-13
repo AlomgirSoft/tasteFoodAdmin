@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddItemActivity">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/back"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Add Item"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+
+        android:background="@drawable/profile_edback_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:id="@+id/itemNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_weight="1"
+            android:fontFamily="@font/akaya_telivigala"
+            android:gravity="center|fill_vertical"
+            android:text="Item Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+
+            android:layout_weight="1"
+
+            android:backgroundTint="@color/gray"
+            app:boxBackgroundColor="@color/gray"
+
+            app:boxBackgroundMode="none"
+            app:boxStrokeColor="@color/green"
+            app:boxStrokeErrorColor="@color/gray"
+
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/itemNameTv"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="15dp"
+                android:hint="Item Name "
+                android:inputType="text"
+                android:padding="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/itemPriceLayout"
+
+
+
+        android:background="@drawable/profile_edback_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameLayout">
+
+        <TextView
+            android:id="@+id/itemPriceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_weight="1"
+            android:fontFamily="@font/akaya_telivigala"
+            android:gravity="center|fill_vertical"
+            android:text="Item Price"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/itemPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/itemPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+
+            android:layout_weight="1"
+
+            android:backgroundTint="@color/gray"
+            app:boxBackgroundColor="@color/gray"
+
+            app:boxBackgroundMode="none"
+            app:boxStrokeColor="@color/green"
+            app:boxStrokeErrorColor="@color/gray"
+
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/itemPriceTv"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="15dp"
+                android:hint="Item Price "
+
+                android:inputType="text"
+                android:padding="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:id="@+id/itemImageLayout"
+
+
+
+    android:background="@drawable/profile_edback_round"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/itemPriceLayout">
+
+        <TextView
+            android:id="@+id/itemAddImageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_weight="1"
+            android:fontFamily="@font/akaya_telivigala"
+
+            android:text="Item Add Image"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="7dp"
+
+            android:drawableEnd="@drawable/plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/itemFoodImageView"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="@+id/itemImageLayout"
+        app:layout_constraintStart_toStartOf="@+id/itemImageLayout"
+        app:layout_constraintTop_toBottomOf="@+id/itemImageLayout"
+        app:riv_corner_radius="10dip"
+ />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/profile_edback_round"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="fill_vertical"
+        android:padding="9dp"
+        android:text="Short Description"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/itemImageLayout"
+        app:layout_constraintTop_toBottomOf="@+id/itemFoodImageView" />
+
+    <EditText
+        android:id="@+id/shotDescription"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua. Ut enim ad "
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView10"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/profile_edback_round"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center_vertical"
+        android:padding="7dp"
+        android:text="Ingredients"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/shotDescription"
+        app:layout_constraintTop_toBottomOf="@+id/shotDescription" />
+
+    <EditText
+        android:id="@+id/editTextIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Noddle\nSalad\nBurger"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="157dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/button_back"
+        android:fontFamily="@font/akaya_telivigala"
+        android:padding="5dp"
+        android:text="Add Item"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
